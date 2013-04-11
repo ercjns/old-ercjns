@@ -20,6 +20,20 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 
+	<script type="text/javascript">
+	function showText(shID) {
+		if (document.getElementById(shID)) {
+			document.getElementById(shID).style.display = 'block';
+		}
+	}
+
+	function hideText(shID) {
+		if (document.getElementById(shID)) {
+			document.getElementById(shID).style.display = 'none';
+		}
+	}
+
+	</script>
 
 
 
@@ -27,7 +41,10 @@
 		<div id="wrapper">
 
 		<!-- this is the header -->
-		<div id="me">
+		<div id="me"></div>
+
+		<div id="aboutMe">
+
 			Eric Jones
 
 			<div id="student" class="magic">
@@ -51,15 +68,16 @@
 					<li>Tinkering</li>
 				</ul>
 			</div>
-			
+
 		</div>
 
 		
 
 
 		<!-- columns -->
-		<div id="leftA" class="col3">
-			<h2>Student</h2>
+		<div id="leftA" class="col3" onMouseOver="showText('student')"
+			   onMouseOut="hideText('student')">
+			   <h2>Student</h2>
 			
 		</div>
 
@@ -67,7 +85,8 @@
 		<div id="A1" class="col3buff">
 			<p class="hide">|</p>
 		</div>
-		<div id="centerA" class="col3">
+		<div id="centerA" class="col3" onMouseOver="showText('engineer')"
+			   onMouseOut="hideText('engineer')">
 			<h2>Engineer</h2>
 			
 		</div>
@@ -76,7 +95,8 @@
 		<div id="A2" class="col3buff">
 			<p class="hide">|</p>
 		</div>
-		<div id="rightA" class="col3">
+		<div id="rightA" class="col3" onMouseOver="showText('explorer')"
+			   onMouseOut="hideText('explorer')">
 			<h2>Explorer</h2>
 			
 		</div>
@@ -108,7 +128,7 @@
 
 		<!-- my name and stuff -->
 		<div id="footer">
-			Simply HTML and CSS, by me from scratch, 2013.
+			Simply HTML, CSS and JavaScript, by me from scratch, 2013.
 		</div>
 
 

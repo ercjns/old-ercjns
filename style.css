@@ -80,6 +80,7 @@ img, a img {
 
 ul {
 	padding-left: 30px;
+	text-align: left;
 }
 
 small {
@@ -128,30 +129,29 @@ input:focus, select:focus, option:focus, textarea:focus {
 }
 
 #me {
-	width: 100%;
+	width: 70%;
+	float: left;
 	height: 250px;
 	background-image: url('media/me.png');
 	background-repeat: no-repeat;
 	background-position: left;
-	background-size: 70%;
+
+}
+
+#aboutMe {
+	width: 30%;
+	float: left;
+	height: 250px;
 	text-align: right;
 	font-family: 'Rock Salt', 'Dosis', sans-serif;
 	font-size: 40px;
 	font-color: black;
 }
 
-/*
-#about {
-	text-align: right;
-	
-	font-size: 40px;
-	font-color: white;
-	height: 250px;
-	background-color: green;
-}
-*/
-
 .magic {
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	font-size: 14px;
 	display: none;
 }
 
@@ -178,7 +178,7 @@ input:focus, select:focus, option:focus, textarea:focus {
 .col3 {
 	width: 30%;
 	float: left;
-	height: 250px;
+	height: 100px;
 }
 
 .col3buff {
