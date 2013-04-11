@@ -129,7 +129,7 @@ input:focus, select:focus, option:focus, textarea:focus {
 
 
 #hello {
-	text-align: center;
+	text-align: right;
 	font-family: 'Rock Salt', 'Dosis', sans-serif;
 	font-size: 40px;
 	font-color: white;
