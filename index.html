@@ -13,8 +13,8 @@
 
 		<!-- Get some add-ins -->
 		<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 
 		<!-- Load up the CSS -->
 		<link rel="stylesheet" type="text/css" href="style.css" />
@@ -22,16 +22,32 @@
 
 	<!-- Javascript for mouseOver interactions -->
 	<script type="text/javascript">
+
 	function showText(shID) {
 		if (document.getElementById(shID)) {
 			document.getElementById(shID).style.display = 'block';
 		}
 	}
+
 	function hideText(shID) {
 		if (document.getElementById(shID)) {
 			document.getElementById(shID).style.display = 'none';
 		}
+	}	
+
+	var nowShowing;
+
+	function swapTo(elID) {
+		if (document.getElementById(elID)) {
+			if (document.getElementById(nowShowing)) {
+				hideText(nowShowing)
+			}
+			showText(elID);
+			nowShowing = elID;
+		}
 	}
+
+
 	</script>
 
 
@@ -39,7 +55,7 @@
 	<body>
 		<div id="wrapper">
 
-		<!-- navigation goes here -->
+		<!-- navigation (if any) goes here? -->
 
 		<!-- first line of box: picture and about -->
 		<div id="me"></div>
@@ -49,65 +65,60 @@
 			Eric Jones
 
 			<div id="student-more" class="magic">
-				I'm about to graduate from <a href="www.olin.edu">Olin College</a>, a tiny school in Needham, MA. 
-			<ul>
-				<li>I'm the student body president</li>
-				<li>I help teach first-year students</li>
-				<li>I work on projects, not P-sets</li>
-			</ul>
+				I'm about to graduate from <a href="www.olin.edu">Olin College</a>, a tiny school (300 undergrad engineers) in Needham, Massachusetts. I'm the student body president, among other activities.
 			</div>
 
 			<div id="engineer-more" class="magic">
-				I'm an electrical and computer engineer, but I've worked on projects from a 40mph (human powered) bicycle to robotic fish toys. System integration and project management are what I know and love.
+				I'm an electrical and computer engineer jack-of-all-trades, and system integration and project management are what I know and love.
 			</div>
 
 			<div id="explorer-more" class="magic">
-				I really like to get lost, but I'm really good at not getting lost. Ask my friends. I also enjoy
-				<ul>
-					<li>Bicycling and Running</li>
-					<li>Backpacking</li>
-					<li>Tinkering</li>
-				</ul>
+				I really like to get lost, but I'm really good at not getting lost. Ask my friends. I enjoy bicycling, running, backpacking, and tinkering.
 			</div>
 
-		</div>
+		</div> <!-- about me text div -->
 
 		
 
 
 		<!-- second line of box: topics -->
-		<div id="student" class="col3" onMouseOver="showText('student-more')"
-			   onMouseOut="hideText('student-more')">
+		<div id="student" class="col3" onMouseOver="swapTo('student-more')">
 			   <h2>Student</h2>
-			
 		</div>
 
 
 		<div id="stueng" class="col3buff"></div>
 		
-		<div id="engineer" class="col3" onMouseOver="showText('engineer-more')"
-			   onMouseOut="hideText('engineer-more')">
+
+		<div id="engineer" class="col3" onMouseOver="swapTo('engineer-more')">
 			<h2>Engineer</h2>
-			
 		</div>
 
 
 		<div id="engexp" class="col3buff"></div>
 
-		<div id="explorer" class="col3" onMouseOver="showText('explorer-more')"
-			   onMouseOut="hideText('explorer-more')">
+
+		<div id="explorer" class="col3" onMouseOver="swapTo('explorer-more')">
 			<h2>Explorer</h2>
-			
 		</div>
 
 
 		<!-- break, extra info -->
 		<div id="upperFoot">
-			<b>Resume</b> (pdf) (plaintext)
+			<b>Resume</b> 
+			(<a href="media/EricJones2013.pdf">pdf</a>) 
+			(<a href="media/EricJones2013.txt">plaintext</a>)
+
 			&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp  
+
 			<b>Contact</b> eric (at) ercjns (dot) com
+
 			&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
-			<b>Connect</b> (facebook) (linkedIN) (twitter)
+
+			<b>Connect</b> 
+			(<a href="http://www.facebook.com/ercjns">facebook</a>) 
+			(<a href="http://www.twitter.com/ercjns">twitter</a>) 
+			(<a href="http://www.linkedin.com/in/ercjns">linkedIN</a>)
 		</div>
 
 

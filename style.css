@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: lightgray;
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'Arvo', sans-serif;
 }  
 
 #wrapper {
@@ -27,9 +27,8 @@ body {
 }
 
 h1, h2, h3{
-	font-family: 'Dosis', Arial, sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	padding-top: 10px;
-	padding-left: 20px;
 	padding-bottom: 2px;
 }
 
@@ -46,7 +45,7 @@ h3 {
 }
 
 h4, h5, {
-	font-family: 'Dosis', Arial, sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 h4 {
@@ -143,18 +142,18 @@ input:focus, select:focus, option:focus, textarea:focus {
 	float: left;
 	height: 220px;
 	text-align: center;
-	font-family: 'Rock Salt', 'Dosis', sans-serif;
+	font-family: 'Rock Salt', 'Open Sans Condensed', sans-serif;
 	font-size: 40px;
 	font-color: black;
 	background-color: white;
 }
 
 .magic {
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Arvo', sans-serif;
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
 	display: none;
-	padding: 15px;
+	padding: 10px;
 }
 
 #student {
@@ -178,6 +177,7 @@ background-image: linear-gradient(to right, #FF8533 0%, #80B2FF 100%);
 
 #engineer {
 	background-color: #80B2FF;
+	text-align: center;
 }
 
 #engexp {
@@ -197,6 +197,7 @@ background-image: linear-gradient(to right, #80B2FF 0%, #80CC80 100%);
 
 #explorer {
 	background-color: #80CC80;
+	text-align: right;
 }
 
 
@@ -216,9 +217,11 @@ background-image: linear-gradient(to right, #80B2FF 0%, #80CC80 100%);
 }
 
 .col3 {
-	width: 27%;
+	width: 23%;
 	float: left;
 	height: 75px;
+	padding-left: 2%;
+	padding-right: 2%;	
 }
 
 .col3buff {
@@ -226,8 +229,6 @@ background-image: linear-gradient(to right, #80B2FF 0%, #80CC80 100%);
 	float: left;
 	height: 75px;
 }
-
-
 
 
 
