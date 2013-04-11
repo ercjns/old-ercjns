@@ -20,34 +20,35 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 
+	<!-- Javascript for mouseOver interactions -->
 	<script type="text/javascript">
 	function showText(shID) {
 		if (document.getElementById(shID)) {
 			document.getElementById(shID).style.display = 'block';
 		}
 	}
-
 	function hideText(shID) {
 		if (document.getElementById(shID)) {
 			document.getElementById(shID).style.display = 'none';
 		}
 	}
-
 	</script>
 
 
-
+	<!-- Where all the real stuff goes -->
 	<body>
 		<div id="wrapper">
 
-		<!-- this is the header -->
+		<!-- navigation goes here -->
+
+		<!-- first line of box: picture and about -->
 		<div id="me"></div>
 
 		<div id="aboutMe">
 
 			Eric Jones
 
-			<div id="student" class="magic">
+			<div id="student-more" class="magic">
 				I'm about to graduate from <a href="www.olin.edu">Olin College</a>, a tiny school in Needham, MA. 
 			<ul>
 				<li>I'm the student body president</li>
@@ -56,11 +57,11 @@
 			</ul>
 			</div>
 
-			<div id="engineer" class="magic">
+			<div id="engineer-more" class="magic">
 				I'm an electrical and computer engineer, but I've worked on projects from a 40mph (human powered) bicycle to robotic fish toys. System integration and project management are what I know and love.
 			</div>
 
-			<div id="explorer" class="magic">
+			<div id="explorer-more" class="magic">
 				I really like to get lost, but I'm really good at not getting lost. Ask my friends. I also enjoy
 				<ul>
 					<li>Bicycling and Running</li>
@@ -74,62 +75,50 @@
 		
 
 
-		<!-- columns -->
-		<div id="leftA" class="col3" onMouseOver="showText('student')"
-			   onMouseOut="hideText('student')">
+		<!-- second line of box: topics -->
+		<div id="student" class="col3" onMouseOver="showText('student-more')"
+			   onMouseOut="hideText('student-more')">
 			   <h2>Student</h2>
 			
 		</div>
 
 
-		<div id="A1" class="col3buff">
-			<p class="hide">|</p>
-		</div>
-		<div id="centerA" class="col3" onMouseOver="showText('engineer')"
-			   onMouseOut="hideText('engineer')">
+		<div id="stueng" class="col3buff"></div>
+		
+		<div id="engineer" class="col3" onMouseOver="showText('engineer-more')"
+			   onMouseOut="hideText('engineer-more')">
 			<h2>Engineer</h2>
 			
 		</div>
 
 
-		<div id="A2" class="col3buff">
-			<p class="hide">|</p>
-		</div>
-		<div id="rightA" class="col3" onMouseOver="showText('explorer')"
-			   onMouseOut="hideText('explorer')">
+		<div id="engexp" class="col3buff"></div>
+
+		<div id="explorer" class="col3" onMouseOver="showText('explorer-more')"
+			   onMouseOut="hideText('explorer-more')">
 			<h2>Explorer</h2>
 			
 		</div>
 
 
-		<!-- break after the columns -->
-		<div id="content">
-			<hr>
-		<div>
-
-
-
-		<!-- more columns -->
-		<div id="leftB" class="col2" text-align="right">
-			<h5>Resume</h5> (pdf) (plaintext)
-			<h5>Contact</h5> eric (at) ercjns (dot) com
+		<!-- break, extra info -->
+		<div id="upperFoot">
+			<b>Resume</b> (pdf) (plaintext)
+			&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp  
+			<b>Contact</b> eric (at) ercjns (dot) com
+			&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+			<b>Connect</b> (facebook) (linkedIN) (twitter)
 		</div>
 
 
-		<div id="B1" class="col2buff">
-			<p class="hide">|</p>
-		</div>
-		<div id="rightB" class="col2">
-			<h5>Read</h5> Insights and other Ramblings
-			<h5>Connect</h5> (facebook) (linkedIN) (twitter)
-			
-		</div>
+	</div> <!-- wrapper -->
 
+	<!-- my name and stuff -->
+	<div id="footer">
+		<hr>
+		Simply HTML, CSS and JavaScript, by <a href="http://www.ercjns.com">me</a>. 2013.
+	</div>
 
-		<!-- my name and stuff -->
-		<div id="footer">
-			Simply HTML, CSS and JavaScript, by me from scratch, 2013.
-		</div>
 
 
 	</body>
