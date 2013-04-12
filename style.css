@@ -136,3 +136,21 @@ even though it's using percents everywhere. bad form. */
 	text-align: center;
 	font-size: 10px;
 }
+
+
+/*-------------------------------------------------------
+PROJECTS.html
+-------------------------------------------------------*/
+
+#projects {
+	clear: left;
+	width: 80%;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project {
+	margin: 20px;
+	background-color: lightgray;
+}
