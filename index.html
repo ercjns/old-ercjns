@@ -55,21 +55,40 @@
 	<body>
 		<div id="wrapper">
 
-		<!-- navigation (if any) goes here? -->
-		<div id="navigation"> 
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Interests</a></li>
-			</ul>
+		<div id="header">
+
+			<div id="banner">
+				Eric Jones
+			</div>
+
+			<div id="navigation"> 
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Interests</a></li>
+				</ul>
+			</div>
+
 		</div>
 
+		<div class="col1"></div>
+
 		<!-- first line of box: picture and about -->
-		<div id="me"></div>
+		<div id="photo"></div>
 
 		<div id="aboutMe">
 
-			Eric Jones
+			<div id="student" class="tab" onMouseOver="swapTo('student-more')">
+				Student
+			</div>
+
+			<div id="engineer" class="tab" onMouseOver="swapTo('engineer-more')">
+				Engineer
+			</div>
+
+			<div id="explorer" class="tab" onMouseOver="swapTo('explorer-more')">
+				Explorer
+			</div>
 
 			<div id="student-more" class="magic">
 				I'm about to graduate from <a href="www.olin.edu">Olin College</a>, a tiny school (300 undergrad engineers) in Needham, Massachusetts. I'm the student body president, among other activities.
@@ -83,12 +102,11 @@
 				I really like to get lost, but I'm really good at not getting lost. Ask my friends. I enjoy bicycling, running, backpacking, and tinkering.
 			</div>
 
+
 		</div> <!-- about me text div -->
 
-		
 
-
-		<!-- second line of box: topics -->
+		<!-- second line of box: topics 
 		<div id="student" class="col3" onMouseOver="swapTo('student-more')">
 			   <h2>Student</h2>
 		</div>
@@ -108,7 +126,8 @@
 		<div id="explorer" class="col3" onMouseOver="swapTo('explorer-more')">
 			<h2>Explorer</h2>
 		</div>
-
+		
+		-->
 
 		<!-- break, extra info -->
 		<div id="upperFoot">

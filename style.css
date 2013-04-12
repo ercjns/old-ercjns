@@ -10,16 +10,48 @@ body {
 	font-family: 'Arvo', sans-serif;
 }  
 
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+
+	/*min-width: 600px; */
+	width: 900px;	
+	padding: 0 30px;
+	
+}
+
+
+#header {
+	width: 100%;
+}
+
+#banner {
+	width: 30%;
+	float: left;
+	font-family: 'Rock Salt', sans-serif;
+	font-size: 40px;
+	display: inline;
+}
+
 #navigation {
+	width: 70%;
+	float: right;
+	clear: right;
+	display: inline;
 	font-size: 25px;
+	text-align: right;
 }
 
 #navigation ul {
+	float: right;
 	list-style-type: none;
 }
 
 #navigation ul li{
+	float: left;
 	display: inline;
+	padding-top: 35px;
 	margin: 10px 20px;
 }
 
@@ -32,16 +64,7 @@ body {
 	color: green;
 }
 
-#wrapper {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 60px;
 
-	/*min-width: 600px; */
-	width: 900px;	
-	padding: 0 30px;
-	
-}
 
 h1, h2, h3{
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -96,8 +119,8 @@ ul {
 }
 
 
-#me {
-	width: 550px;
+#photo {
+	width: 60%;
 	float: left;
 	height: 220px;
 	background-image: url('media/me.png');
@@ -107,17 +130,23 @@ ul {
 }
 
 #aboutMe {
-	width: 340px;
+	width: 40%;
 	float: left;
-	height: 210px;
+	height: 220px;
 	text-align: center;
 	font-family: 'Rock Salt', 'Open Sans Condensed', sans-serif;
 	font-size: 40px;
 	color: black;
-	border: 5px;
-	border-style: solid;
-	border-color: black;
+	background-color: white;
+	opacity: 0.5;
+
 	;
+}
+
+.tab {
+	font-size: 15px;
+	margin: 0 5px;
+	display: inline-block;
 }
 
 .magic {
@@ -126,6 +155,12 @@ ul {
 	font-size: 16px;
 	display: none;
 	padding: 10px;
+}
+
+.col1 {
+	float: left;
+	width: 100%;
+	height: 0px;
 }
 
 .col3 {
@@ -142,51 +177,10 @@ ul {
 	height: 75px;
 }
 
-#student {
-	background-color: #005CE6;
+#greenbar {
+	height: 15px;
+	background-color: green;
 }
-
-#stueng { /* using http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/ */
-/* IE10 Consumer Preview */ 
-background-image: -ms-linear-gradient(left, #005CE6 0%, #AE5D00 100%);
-/* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(left, #005CE6 0%, #AE5D00 100%);
-/* Opera */ 
-background-image: -o-linear-gradient(left, #005CE6 0%, #AE5D00 100%);
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #005CE6), color-stop(1, #AE5D00));
-/* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(left, #005CE6 0%, #AE5D00 100%);
-/* W3C Markup, IE10 Release Preview */ 
-background-image: linear-gradient(to right, #005CE6 0%, #AE5D00 100%);
-}
-
-#engineer {
-	background-color: #AE5D00;
-	text-align: center;
-}
-
-#engexp {
-/* IE10 Consumer Preview */ 
-background-image: -ms-linear-gradient(left, #AE5D00 0%, #078D00 100%);
-/* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(left, #AE5D00 0%, #078D00 100%);
-/* Opera */ 
-background-image: -o-linear-gradient(left, #AE5D00 0%, #078D00 100%);
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #AE5D00), color-stop(1, #078D00));
-/* Webkit (Chrome 11+) */
-background-image: -webkit-linear-gradient(left, #AE5D00 0%, #078D00 100%);
-/* W3C Markup, IE10 Release Preview */ 
-background-image: linear-gradient(to right, #AE5D00 0%, #078D00 100%);
-}
-
-#explorer {
-	background-color: #078D00;
-	text-align: right;
-}
-
-
 
 #upperFoot {
 	width: 100%;
