@@ -4,54 +4,37 @@
 		<title>eric jones</title>
 
 		<!-- faviocon.ico -->
-		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="shortcut icon" href="media/favicon.ico" />
 
 		<!-- help the series of tubes recognize me -->
 		<meta name="keywords" content="Eric Jones, Olin College, Engineer" />
 		<meta name="description" content="Eric is a student, engineer, and explorer." />
 		<meta name="author" content="Eric Jones" />
 
-		<!-- Get some add-ins -->
+		<!-- Get some fonts from google -->
 		<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 
 		<!-- Load up the CSS -->
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 
-	<!-- Javascript for mouseOver interactions -->
+	<!-- Javascript for mouseOver interaction -->
 	<script type="text/javascript">
-
-	function showText(shID) {
-		if (document.getElementById(shID)) {
-			document.getElementById(shID).style.display = 'block';
-		}
-	}
-
-	function hideText(shID) {
-		if (document.getElementById(shID)) {
-			document.getElementById(shID).style.display = 'none';
-		}
-	}	
-
 	var nowShowing;
-
 	function swapTo(elID) {
 		if (document.getElementById(elID)) {
 			if (document.getElementById(nowShowing)) {
-				hideText(nowShowing)
+				document.getElementById(nowShowing).style.display = 'none';
 			}
-			showText(elID);
+			document.getElementById(elID).style.display = 'block';
 			nowShowing = elID;
 		}
 	}
-
-
 	</script>
 
 
-	<!-- Where all the real stuff goes -->
+	<!-- Where all the real content goes -->
 	<body>
 		<div id="wrapper">
 
@@ -71,9 +54,10 @@
 
 		</div>
 
-		<div class="col1"></div>
+		<div class="col1"></div> 
+		<!-- split header and content -->
 
-		<!-- first line of box: picture and about -->
+
 		<div id="photo"></div>
 
 		<div id="aboutMe">
@@ -104,30 +88,6 @@
 
 
 		</div> <!-- about me text div -->
-
-
-		<!-- second line of box: topics 
-		<div id="student" class="col3" onMouseOver="swapTo('student-more')">
-			   <h2>Student</h2>
-		</div>
-
-
-		<div id="stueng" class="col3buff"></div>
-		
-
-		<div id="engineer" class="col3" onMouseOver="swapTo('engineer-more')">
-			<h2>Engineer</h2>
-		</div>
-
-
-		<div id="engexp" class="col3buff"></div>
-
-
-		<div id="explorer" class="col3" onMouseOver="swapTo('explorer-more')">
-			<h2>Explorer</h2>
-		</div>
-		
-		-->
 
 		<!-- break, extra info -->
 		<div id="upperFoot">

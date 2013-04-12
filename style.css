@@ -8,17 +8,33 @@ body {
 	padding: 0;
 	background-image: url('media/cork4.jpg');
 	font-family: 'Arvo', sans-serif;
-}  
+} 
+
+a {
+	color: green;
+	text-decoration: underline;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: none;
+}
+
+img, a img {
+	border: none; /* remove the box around a picture */
+}
+
+
+/* There's still a slight mix of widths with percent vs. pixels
+this should be resolved at some point. Still leaving the option
+open to go to a fluid width scheme, but for now it's fixed width,
+even though it's using percents everywhere. bad form. */
 
 #wrapper {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 60px;
-
-	/*min-width: 600px; */
 	width: 900px;	
 	padding: 0 30px;
-	
 }
 
 
@@ -64,61 +80,6 @@ body {
 	color: green;
 }
 
-
-
-h1, h2, h3{
-	font-family: 'Open Sans Condensed', sans-serif;
-	padding-top: 10px;
-	padding-bottom: 2px;
-}
-
-h1 {
-	font-size: 50px;
-}
-
-h2 {
-	font-size: 35px;
-}
-
-h3 {
-	font-size: 20px;
-}
-
-h4, h5, {
-	font-family: 'Open Sans Condensed', sans-serif;
-}
-
-h4 {
-	font-size: 35px;
-}
-
-h5 {
-	font-size: 20px;
-	t
-}
-
-p {
-}
-
-a {
-	color: blue;
-	text-decoration: underline;
-}
-
-a:hover, a:focus, a:active {
-	text-decoration: none;
-}
-
-img, a img {
-	border: none; /* remove the box around a picture */
-}
-
-ul {
-	padding-left: 30px;
-	text-align: left;
-}
-
-
 #photo {
 	width: 60%;
 	float: left;
@@ -134,13 +95,11 @@ ul {
 	float: left;
 	height: 220px;
 	text-align: center;
-	font-family: 'Rock Salt', 'Open Sans Condensed', sans-serif;
+	font-family: 'Rock Salt', 'Arvo', sans-serif;
 	font-size: 40px;
 	color: black;
-	background-color: white;
-	opacity: 0.5;
-
-	;
+	background-color: lightblue;
+	opacity: .6;
 }
 
 .tab {
@@ -161,25 +120,6 @@ ul {
 	float: left;
 	width: 100%;
 	height: 0px;
-}
-
-.col3 {
-	width: 23%;
-	float: left;
-	height: 75px;
-	padding-left: 2%;
-	padding-right: 2%;	
-}
-
-.col3buff {
-	width: 9.5%;
-	float: left;
-	height: 75px;
-}
-
-#greenbar {
-	height: 15px;
-	background-color: green;
 }
 
 #upperFoot {
