@@ -6,23 +6,40 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: lightgray;
+	background-image: url('media/cork4.jpg');
 	font-family: 'Arvo', sans-serif;
 }  
+
+#navigation {
+	font-size: 25px;
+}
+
+#navigation ul {
+	list-style-type: none;
+}
+
+#navigation ul li{
+	display: inline;
+	margin: 10px 20px;
+}
+
+#navigation ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+#navigation ul li a:hover {
+	color: green;
+}
 
 #wrapper {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 100px;
+	margin-top: 60px;
 
 	/*min-width: 600px; */
-	width: 900px;
-
-	background-color: white;
-	
-	border: 10px;
-	border-style: solid;
-	border-color: lightgray;
+	width: 900px;	
+	padding: 0 30px;
 	
 }
 
@@ -60,10 +77,6 @@ h5 {
 p {
 }
 
-p.hide {
-	visibility: hidden;
-}
-
 a {
 	color: blue;
 	text-decoration: underline;
@@ -82,50 +95,6 @@ ul {
 	text-align: left;
 }
 
-small {
-}
-
-abbr, acronym {
-}
-
-blockquote {
-}
-
-cite {
-}
-
-em {
-}
-
-strong {
-}
-
-form {
-}
-
-fieldset {
-}
-
-legend {
-}
-
-label {
-}
-
-input {
-}
-
-select {
-}
-
-option {
-}
-
-textarea {
-}
-
-input:focus, select:focus, option:focus, textarea:focus {
-}
 
 #me {
 	width: 550px;
@@ -138,14 +107,17 @@ input:focus, select:focus, option:focus, textarea:focus {
 }
 
 #aboutMe {
-	width: 350px;
+	width: 340px;
 	float: left;
-	height: 220px;
+	height: 210px;
 	text-align: center;
 	font-family: 'Rock Salt', 'Open Sans Condensed', sans-serif;
 	font-size: 40px;
-	font-color: black;
-	background-color: white;
+	color: black;
+	border: 5px;
+	border-style: solid;
+	border-color: black;
+	;
 }
 
 .magic {
@@ -154,66 +126,6 @@ input:focus, select:focus, option:focus, textarea:focus {
 	font-size: 16px;
 	display: none;
 	padding: 10px;
-}
-
-#student {
-	background-color: #FF8533;
-}
-
-#stueng { /* using http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/ */
-/* IE10 Consumer Preview */ 
-background-image: -ms-linear-gradient(left, #FF8533 0%, #80B2FF 100%);
-/* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(left, #FF8533 0%, #80B2FF 100%);
-/* Opera */ 
-background-image: -o-linear-gradient(left, #FF8533 0%, #80B2FF 100%);
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FF8533), color-stop(1, #80B2FF));
-/* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(left, #FF8533 0%, #80B2FF 100%);
-/* W3C Markup, IE10 Release Preview */ 
-background-image: linear-gradient(to right, #FF8533 0%, #80B2FF 100%);
-}
-
-#engineer {
-	background-color: #80B2FF;
-	text-align: center;
-}
-
-#engexp {
-/* IE10 Consumer Preview */ 
-background-image: -ms-linear-gradient(left, #80B2FF 0%, #80CC80 100%);
-/* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(left, #80B2FF 0%, #80CC80 100%);
-/* Opera */ 
-background-image: -o-linear-gradient(left, #80B2FF 0%, #80CC80 100%);
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #80B2FF), color-stop(1, #80CC80));
-/* Webkit (Chrome 11+) */
-background-image: -webkit-linear-gradient(left, #80B2FF 0%, #80CC80 100%);
-/* W3C Markup, IE10 Release Preview */ 
-background-image: linear-gradient(to right, #80B2FF 0%, #80CC80 100%);
-}
-
-#explorer {
-	background-color: #80CC80;
-	text-align: right;
-}
-
-
-.col1 {
-	width: 100%;
-}
-
-.col2 {
-	width: 48%;
-	float: left;
-	height: 150px;
-}
-
-.col2buff {
-	width: 4%;
-	float: left;
 }
 
 .col3 {
@@ -230,19 +142,56 @@ background-image: linear-gradient(to right, #80B2FF 0%, #80CC80 100%);
 	height: 75px;
 }
 
-
-
-#sidebar {
+#student {
+	background-color: #005CE6;
 }
 
-#navigation {
+#stueng { /* using http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/ */
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(left, #005CE6 0%, #AE5D00 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(left, #005CE6 0%, #AE5D00 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(left, #005CE6 0%, #AE5D00 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #005CE6), color-stop(1, #AE5D00));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(left, #005CE6 0%, #AE5D00 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to right, #005CE6 0%, #AE5D00 100%);
 }
+
+#engineer {
+	background-color: #AE5D00;
+	text-align: center;
+}
+
+#engexp {
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(left, #AE5D00 0%, #078D00 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(left, #AE5D00 0%, #078D00 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(left, #AE5D00 0%, #078D00 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #AE5D00), color-stop(1, #078D00));
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(left, #AE5D00 0%, #078D00 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to right, #AE5D00 0%, #078D00 100%);
+}
+
+#explorer {
+	background-color: #078D00;
+	text-align: right;
+}
+
+
 
 #upperFoot {
 	width: 100%;
 	float: left;
 	text-align: center;
-	background-color: lightgray;
 	margin-top: 6px;
 }
 
@@ -252,32 +201,4 @@ background-image: linear-gradient(to right, #80B2FF 0%, #80CC80 100%);
 	margin-top: 50px;
 	text-align: center;
 	font-size: 10px;
-
-
-}
-
-.bold {
-	font-style: bold;
-}
-
-.italic {
-	font-style: italic;
-}
-
-.hidden {
-}
-
-.offset {
-}
-
-.highlight {
-}
-
-.tiny {
-}
-
-.error {
-}
-
-.abbr {
 }
