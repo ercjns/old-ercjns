@@ -23,6 +23,16 @@ img, a img {
 	border: none; /* remove the box around a picture */
 }
 
+h1, h2 {
+	font-family: 'Rock Salt', sans-serif;
+	padding-right: 10px;
+	display: inline;
+}
+
+h3, h4 {
+	display: inline;
+}
+
 
 /* There's still a slight mix of widths with percent vs. pixels
 this should be resolved at some point. Still leaving the option
@@ -80,6 +90,26 @@ even though it's using percents everywhere. bad form. */
 	color: green;
 }
 
+#upperFoot {
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 6px;
+}
+
+#footer {
+	width: 100%;
+	float: left;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 10px;
+}
+
+
+/*-------------------------------------------------------
+INDEX.html
+-------------------------------------------------------*/
+
 #photo {
 	width: 60%;
 	float: left;
@@ -122,20 +152,6 @@ even though it's using percents everywhere. bad form. */
 	height: 0px;
 }
 
-#upperFoot {
-	width: 100%;
-	float: left;
-	text-align: center;
-	margin-top: 6px;
-}
-
-#footer {
-	width: 100%;
-	float: left;
-	margin-top: 50px;
-	text-align: center;
-	font-size: 10px;
-}
 
 
 /*-------------------------------------------------------
@@ -144,13 +160,41 @@ PROJECTS.html
 
 #projects {
 	clear: left;
-	width: 80%;
+	width: 85%;
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .project {
-	margin: 20px;
-	background-color: lightgray;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	border: 3px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 15px;
+	padding: 5px;
+	box-shadow: 5px 5px 3px #888888;
+}
+
+.project-date {
+	/* date is rendered BELOW the description, then spun UP to meet */
+	float: right;
+	text-align: right;
+	padding-top: 5px; /*increase moves left */
+	padding-right: 50px; /*increase moves up */
+
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	
+	-webkit-transform-origin: top right;
+	-moz-transform-origin: top right;
+	-ms-transform-origin: top right;
+	-o-transform-origin: top right;
+	transform-origin: top right;
 }
