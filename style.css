@@ -128,8 +128,7 @@ INDEX.html
 	font-family: 'Rock Salt', 'Arvo', sans-serif;
 	font-size: 40px;
 	color: black;
-	background-color: lightblue;
-	opacity: .6;
+	background-color: rgba(50,150,255,.3);
 }
 
 .tab {
@@ -149,7 +148,7 @@ INDEX.html
 .col1 {
 	float: left;
 	width: 100%;
-	height: 0px;
+	height: 20px;
 }
 
 
@@ -160,16 +159,15 @@ PROJECTS.html
 
 #projects {
 	clear: left;
-	width: 85%;
+	width: 80%;
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .project {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 93%;
+	float: left;
 	margin-bottom: 5%;
 	border: 3px;
 	border-style: solid;
@@ -177,12 +175,15 @@ PROJECTS.html
 	border-radius: 15px;
 	padding: 5px;
 	box-shadow: 5px 5px 3px #888888;
+	background-color: rgba(50,150,255,.3);
 }
 
 .project-date {
 	/* date is rendered BELOW the description, then spun UP to meet */
 	float: right;
 	text-align: right;
+	font-weight: bold;
+	color: green;
 	padding-top: 5px; /*increase moves left */
 	padding-right: 50px; /*increase moves up */
 
@@ -197,4 +198,46 @@ PROJECTS.html
 	-ms-transform-origin: top right;
 	-o-transform-origin: top right;
 	transform-origin: top right;
+}
+
+/*-------------------------------------------------------
+INTERESTS.html
+-------------------------------------------------------*/
+
+.col3contain{
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+
+.col3contain a{
+	color: black;
+	text-decoration: none;
+}
+
+.col3 {
+	float: left;
+	width: 200px;
+}
+
+.col3space{
+	float: left;
+	width: 100px;
+	height: 200px;
+}
+
+.spark {
+	height: 150px;
+	width: 200px;
+	margin-bottom: 20px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: black;
+	background-color: rgba(255,128,0,.5);
+
+	text-align: center;
+	padding-top: 50px;
+	font-size: 25px;
+
+
 }
