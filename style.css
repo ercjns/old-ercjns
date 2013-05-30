@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url('media/cork4.jpg');
+	background-image: url('media/cork.jpg');
 	font-family: 'Arvo', sans-serif;
 } 
 
@@ -94,7 +94,7 @@ even though it's using percents everywhere. bad form. */
 	width: 100%;
 	float: left;
 	text-align: center;
-	margin-top: 6px;
+	margin-top: 20px;
 }
 
 #footer {
@@ -110,31 +110,47 @@ even though it's using percents everywhere. bad form. */
 INDEX.html
 -------------------------------------------------------*/
 
-#photo {
-	width: 60%;
+.photoswap {
+	width: 540px;
 	float: left;
 	height: 220px;
-	background-image: url('media/me.png');
+	display: none;
+}
+
+#student-photo {
+	background-image: url('media/student.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
+}
 
+#engineer-photo {
+	background-image: url('media/engineer.jpg');
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#explorer-photo {
+	background-image: url('media/explorer.png');
+	background-repeat: no-repeat;
+	background-position: top;
 }
 
 #aboutMe {
-	width: 40%;
+	width: 360px;
 	float: left;
 	height: 220px;
 	text-align: center;
 	font-family: 'Rock Salt', 'Arvo', sans-serif;
 	font-size: 40px;
 	color: black;
-	background-color: rgba(50,150,255,.3);
+	background-color: rgba(150,150,150,0.3);
 }
 
 .tab {
 	font-size: 15px;
 	margin: 0 5px;
 	display: inline-block;
+	color: black;
 }
 
 .magic {
@@ -208,36 +224,34 @@ INTERESTS.html
 	margin-left: auto;
 	margin-right: auto;
 	width: 800px;
-}
-
-.col3contain a{
-	color: black;
-	text-decoration: none;
+	
 }
 
 .col3 {
 	float: left;
 	width: 200px;
+	background-color: rgba(128,128,128,.5);
 }
 
 .col3space{
 	float: left;
 	width: 100px;
-	height: 200px;
+	height: 440px;
+	background-color: rgba(128,128,128,.5);
 }
 
 .spark {
-	height: 150px;
+	height: 185px;
 	width: 200px;
 	margin-bottom: 20px;
-	border-style: solid;
-	border-radius: 10px;
-	border-color: black;
-	background-color: rgba(255,128,0,.5);
-
+	/*border-style: solid;*/
+	border-radius: 50px;
+	/*border-color: rgba(0,0,0,.3);*/
+	/*background-color: rgba(128,128,128,.5);*/
+	vertical-align: center;
 	text-align: center;
-	padding-top: 50px;
 	font-size: 25px;
+	padding-top: 15px;
 
 
 }

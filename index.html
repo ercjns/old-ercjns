@@ -21,21 +21,50 @@
 
 	<!-- Javascript for mouseOver interaction -->
 	<script type="text/javascript">
-	var nowShowing;
-	function swapTo(elID) {
-		if (document.getElementById(elID)) {
-			if (document.getElementById(nowShowing)) {
-				document.getElementById(nowShowing).style.display = 'none';
+
+	var nowShowingName;
+	var nowShowingText;
+	var nowShowingPhoto;
+
+	function showAtLoad(name, text, photo) {
+		document.getElementById(text).style.display = 'block';
+		document.getElementById(photo).style.display = 'block';
+		document.getElementById(name).style.color = 'green';
+		nowShowingText = text;
+		nowShowingPhoto = photo;
+		nowShowingName = name;
+	}
+	
+	function swapTo3(name, text, photo) {
+		if (document.getElementById(name)) {
+			if (document.getElementById(nowShowingName)) {
+				document.getElementById(nowShowingName).style.color = 'black';
 			}
-			document.getElementById(elID).style.display = 'block';
-			nowShowing = elID;
+			document.getElementById(name).style.color = 'green';
+			nowShowingName = name;
+		}
+
+		if (document.getElementById(text)) {
+			if (document.getElementById(nowShowingText)) {
+				document.getElementById(nowShowingText).style.display = 'none';
+			}
+			document.getElementById(text).style.display = 'block';
+			nowShowingText = text;
+		}
+
+		if (document.getElementById(photo)) {
+			if (document.getElementById(nowShowingPhoto)) {
+				document.getElementById(nowShowingPhoto).style.display = 'none';
+			}
+			document.getElementById(photo).style.display = 'block';
+			nowShowingPhoto = photo;
 		}
 	}
 	</script>
 
 
 	<!-- Where all the real content goes -->
-	<body>
+	<body onload="showAtLoad('student', 'student-more', 'student-photo')">
 		<div id="wrapper">
 
 		<div id="header">
@@ -57,21 +86,27 @@
 		<div class="col1"></div> 
 		<!-- split header and content -->
 
+		<div id="student-photo" class="photoswap"></div>
+		<div id="engineer-photo" class="photoswap"></div>
+		<div id="explorer-photo" class="photoswap"></div>
 
-		<div id="photo"></div>
 
 		<div id="aboutMe">
 
-			<div id="student" class="tab" onMouseOver="swapTo('student-more')">
+			<div id="student" class="tab" onMouseOver="swapTo3('student', 'student-more', 'student-photo')">
 				Student
 			</div>
 
-			<div id="engineer" class="tab" onMouseOver="swapTo('engineer-more')">
+			<div id="engineer" class="tab" onMouseOver="swapTo3('engineer', 'engineer-more', 'engineer-photo')">
 				Engineer
 			</div>
 
-			<div id="explorer" class="tab" onMouseOver="swapTo('explorer-more')">
+			<div id="explorer" class="tab" onMouseOver="swapTo3('explorer', 'explorer-more', 'explorer-photo')">
 				Explorer
+			</div>
+
+			<div id="rollover-inst" class="magic">
+				
 			</div>
 
 			<div id="student-more" class="magic">
@@ -92,8 +127,8 @@
 		<!-- break, extra info -->
 		<div id="upperFoot">
 			<b>Resume</b> 
-			(<a href="media/EricJones2013.pdf">pdf</a>) 
-			(<a href="media/EricJones2013.txt">plaintext</a>)
+			<a href="media/EricJones2013.pdf"><img style="vertical-align:text-top" height="19px" src="media/pdf.png"></a> or
+			<a href="media/EricJones2013plaintext.txt">text</a>
 
 			&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp  
 
@@ -101,10 +136,10 @@
 
 			&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
 
-			<b>Connect</b> 
-			(<a href="http://www.facebook.com/ercjns">facebook</a>) 
-			(<a href="http://www.twitter.com/ercjns">twitter</a>) 
-			(<a href="http://www.linkedin.com/in/ercjns">linkedIN</a>)
+			<b>Connect</b> &nbsp&nbsp
+			<a href="http://www.facebook.com/ercjns"><img style="vertical-align:text-top" height="19px" src="media/facebook.png"></a> &nbsp&nbsp
+			<a href="http://www.twitter.com/ercjns"><img style="vertical-align:text-top" height="19px"src="media/twitter.png"></a> &nbsp&nbsp
+			<a href="http://www.linkedin.com/in/ercjns"><img style="vertical-align:text-top" height="19px"src="media/linkedin.png"></a>
 		</div>
 
 
