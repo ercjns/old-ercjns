@@ -1,4 +1,4 @@
-site-jekyll
+www.ercjns.com
 ===========
 
-repro for ercjns.com content intended for use with the jekyll manager
+repro for ercjns.com content
