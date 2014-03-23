@@ -1,0 +1,51 @@
+Eric P. Jones        
+eric@ercjns.com       
+
+
+Education
+Franklin W. Olin College of Engineering
+BS Electrical and Computer Engineering
+NAE Grand Challenges Scholar
+Needham, MA. May 2013
+
+Alpharetta High School
+Alpharetta, GA. May 2009
+
+Experience
+Program Manager [Microsoft]
+Windows Fundamentals
+August 2013 - Present
+
+Avionics Product Development Intern [Boeing]
+Communications research, factory user study
+Summer 2012
+
+Research Assistant [University of Minnesota]
+Multi-layer solar cell thin films
+Summer 2011
+
+Research Assistant [Washington State University]
+Forest canopy particle flow modeling
+Summer 2010
+
+Projects
+Zero-Turn Mower Traction Control [SCOPE]
+Mechatronics research platform for Ariens Co.
+
+ASME Human Powered Vehicle [Olin]
+Vehicle design, fabrication, and testing
+
+Student Body President [Olin CORe]
+Coordinate student, faculty, and staff initiatives
+
+Course Scheduling [Discrete Math]
+Develop and implement original algorithms
+
+Cruxx [User Oriented Collaborative Design]
+Ideate and refine a product with rock climbers
+
+Skills
+[Software]
+Python, Matlab, Solidworks, LabVIEW, Linux/Unix, html-css, limited experience with java and js
+[Hardware]
+Electrical tinkering, clean-room tools, composites fabrication, manual mill, basic machine shop tools

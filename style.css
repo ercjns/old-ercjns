@@ -43,7 +43,7 @@ even though it's using percents everywhere. bad form. */
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 60px;
-	width: 900px;	
+	width: 750px;	
 	padding: 0 30px;
 }
 
@@ -53,7 +53,7 @@ even though it's using percents everywhere. bad form. */
 }
 
 #banner {
-	width: 30%;
+	width: 50%;
 	float: left;
 	font-family: 'Rock Salt', sans-serif;
 	font-size: 40px;
@@ -61,7 +61,7 @@ even though it's using percents everywhere. bad form. */
 }
 
 #navigation {
-	width: 70%;
+	width: 50%;
 	float: right;
 	clear: right;
 	display: inline;
@@ -110,148 +110,42 @@ even though it's using percents everywhere. bad form. */
 INDEX.html
 -------------------------------------------------------*/
 
-.photoswap {
-	width: 540px;
+
+.photo {
+	height: 400px;
+	width: 48%;
 	float: left;
-	height: 220px;
-	display: none;
 }
 
-#student-photo {
-	background-image: url('media/student.jpg');
+#iceland-photo{
+	background-image: url('media/iceland1sm.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
 }
 
-#engineer-photo {
-	background-image: url('media/engineer.jpg');
-	background-repeat: no-repeat;
-	background-position: top;
-}
 
-#explorer-photo {
-	background-image: url('media/explorer.png');
-	background-repeat: no-repeat;
-	background-position: top;
-}
-
-#aboutMe {
-	width: 360px;
-	float: left;
-	height: 220px;
-	text-align: center;
-	font-family: 'Rock Salt', 'Arvo', sans-serif;
-	font-size: 40px;
+#about {
+	width: 48%;
+	height: 400px;
+	float: right;
 	color: black;
-	background-color: rgba(150,150,150,0.3);
+	background-color: rgba(240,240,240,0.3);
 }
 
-.tab {
-	font-size: 15px;
-	margin: 0 5px;
-	display: inline-block;
-	color: black;
-}
-
-.magic {
+#aboutText {
+	padding: 15px;
+	vertical-align: middle;
 	font-family: 'Arvo', sans-serif;
-	text-align: center;
-	font-size: 16px;
-	display: none;
-	padding: 10px;
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+#aboutText li {
+	padding-left: 30px;
 }
 
 .col1 {
 	float: left;
 	width: 100%;
-	height: 20px;
-}
-
-
-
-/*-------------------------------------------------------
-PROJECTS.html
--------------------------------------------------------*/
-
-#projects {
-	clear: left;
-	width: 80%;
-	margin-top: 40px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.project {
-	width: 93%;
-	float: left;
-	margin-bottom: 5%;
-	border: 3px;
-	border-style: solid;
-	border-color: black;
-	border-radius: 15px;
-	padding: 5px;
-	box-shadow: 5px 5px 3px #888888;
-	background-color: rgba(50,150,255,.3);
-}
-
-.project-date {
-	/* date is rendered BELOW the description, then spun UP to meet */
-	float: right;
-	text-align: right;
-	font-weight: bold;
-	color: green;
-	padding-top: 5px; /*increase moves left */
-	padding-right: 50px; /*increase moves up */
-
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	transform: rotate(90deg);
-	
-	-webkit-transform-origin: top right;
-	-moz-transform-origin: top right;
-	-ms-transform-origin: top right;
-	-o-transform-origin: top right;
-	transform-origin: top right;
-}
-
-/*-------------------------------------------------------
-INTERESTS.html
--------------------------------------------------------*/
-
-.col3contain{
-	margin-left: auto;
-	margin-right: auto;
-	width: 800px;
-	
-}
-
-.col3 {
-	float: left;
-	width: 200px;
-	background-color: rgba(128,128,128,.5);
-}
-
-.col3space{
-	float: left;
-	width: 100px;
-	height: 440px;
-	background-color: rgba(128,128,128,.5);
-}
-
-.spark {
-	height: 185px;
-	width: 200px;
-	margin-bottom: 20px;
-	/*border-style: solid;*/
-	border-radius: 50px;
-	/*border-color: rgba(0,0,0,.3);*/
-	/*background-color: rgba(128,128,128,.5);*/
-	vertical-align: center;
-	text-align: center;
-	font-size: 25px;
-	padding-top: 15px;
-
-
+	height: 10px;
 }
