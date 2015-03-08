@@ -8,7 +8,7 @@ body {
 	padding: 0;
 	background-image: url('media/cork.jpg');
 	font-family: 'Arvo', sans-serif;
-} 
+}
 
 a {
 	color: green;
@@ -43,7 +43,7 @@ even though it's using percents everywhere. bad form. */
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 60px;
-	width: 750px;	
+	width: 750px;
 	padding: 0 30px;
 }
 
@@ -117,8 +117,8 @@ INDEX.html
 	float: left;
 }
 
-#iceland-photo{
-	background-image: url('media/iceland1sm.jpg');
+#main-photo{
+	background-image: url('media/EricJones_photo.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
 }
@@ -140,7 +140,8 @@ INDEX.html
 	line-height: 1.6;
 }
 
-#aboutText li {
+
+#aboutText ul {
 	padding-left: 30px;
 }
 
