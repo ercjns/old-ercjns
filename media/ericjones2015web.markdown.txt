@@ -1,0 +1,64 @@
+Eric P Jones
+============
+
+Software Product Engineer (what's next?)  
+enjoys reading maps, being lost, and helping people  
+
+### contact ###
+*email: eric (at) ercjns (dot) com*  
+*location: Seattle, WA*
+
+
+Experience
+----------
+
+### Program Manager, Microsoft ###
+*August 2013 - ongoing*  
+Improved windows developer experience by streamlining registration and driving improvements in features for all types of developers, sellers, and partners. Realized a 25% decrease in support volumes by removing steps from developer registration.
+
+### Product Development Intern, Boeing ###
+*summer 2012*  
+Created proof of concept prototypes for next generation onboard electronic communications infrastructure and protocols using COTS hardware.
+
+### Research Assistant, University of Minnesota ###
+*summer 2011*  
+Developed testing protocol, characterized, and evaluated thin films for use in multi-layer solar cells.
+
+### Research Assistant, Washington State University ###
+*Summer 2010*  
+Developed software (MATLAB) to analyze weather station data and model canopy particle flows.
+
+
+Education
+---------
+
+### BS Electrical and Computer Engineering ###
+*Olin College of Engineering, May 2013*  
+Project-based coursework exploring mechatronics, analog and digital communications, user-oriented design, computer science, and sustainability.
+
+
+Projects
+--------
+
+### Orienteering Live Team Scoring, Cascade Orienteering Club ###
+*fall and winter 2014*  
+Developed and demonstrated a full stack solution to provide live results and team scoring for local orienteering meets (300+ competitors). Integrated alongside existing meet management software. Node.js, express, mongoose.
+
+### Zero Turn Mower Traction Control, Olin College SCOPE ###
+*fall 2012 - spring 2013*  
+On a team of 5, I contributed system design, sensor/platform software (LabVIEW), and analysis software (Python) for a traction control research platform developed in partnership with and delivered to Ariens Co.
+
+### ASME Human Powered Vehicles Team, Olin College ###
+*fall 2009 - spring 2012*  
+Contributed to design, fabrication, testing, and documentation of a custom bicycle. As a co-leader of the 20 person team, lead ideation, ensured availability of resources, and drove multiple dependent work streams to completion.
+
+
+Skills
+------
+
+### Software: ###
+Proficient: Python  
+Prototyping: Node.js, C/C++, *nix, SQL, SolidWorks, MATLAB, ArcGIS, LabVIEW
+
+### Hardware: ###
+basic electronics bench, clean room experience; basic machine shop, manual mill, composites fabrication
