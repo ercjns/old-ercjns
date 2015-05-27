@@ -11,83 +11,97 @@
 		<meta name="description" content="Eric is an engineer, explorer, and project wizard." />
 		<meta name="author" content="Eric Jones" />
 
+		<!-- be mobile friendly -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+
 		<!-- Get some fonts from google -->
 		<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 
-		<!-- Load up the CSS -->
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<!-- home page CSS -->
+		<link rel="stylesheet" type="text/css" href="ercjns-home.css" />
+
+		<!-- JS to resize the image -->
+		<script>
+		function scaleImage() {
+			var h = document.getElementById('ercjns-content').clientHeight;
+			if (h>315) {h=315;}
+			var hval = h+"px";
+			document.getElementById('ercjns-photo').style.height = hval;
+		}
+		</script>
+
 	</head>
 
 
 	<!-- Where all the real content goes -->
-	<body>
-		<div id="wrapper">
+	<body onload="scaleImage()" onresize="scaleImage()">
+		<div class="container-fluid">
 
-		<div id="header">
+			<div class="row">
+				<div class="col-sm-5 title">
+					<h1>Eric Jones</h1>
+				</div>
+				<div class="col-sm-offset-1 col-sm-6">
+					<div class="menu">
+						<!-- <a href="projects.html">projects</a> -->
+					</div>
+				</div>
+			</div> <!-- row1 -->
 
-			<div id="banner">
-				Eric Jones
-			</div>
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-3">
+					<div class="photo" id="main-photo">
+						<img id="ercjns-photo" src="media/EricJones_photo2.jpg" height="300px";>
+					</div>
+				</div>
+				<div class="col-sm-offset-2 col-sm-6">
+					<div class="content-wrap">
+						<div class="content" id="ercjns-content">
+						Hi, I'm Eric! If we ever happen to meet in person, here's a few things we could talk about:
+						<ul>
+							<li> Teaching and Education </li>
+							<li> Being Lost </li>
+							<li> Renewable Energy </li>
+							<li> Mass Transit </li>
+							<li> Maps </li>
+							<li> Olin College </li>
+							<li> Backpacking </li>
+						</ul>
+							</br>
+							What's on your list?
+						</div>
+					</div>
+				</div> <!-- content -->
+			</div> <!-- row2 -->
 
-			<div id="navigation">
-				<ul>
-				</ul>
-			</div>
-
-		</div>
-
-		<div class="col1"></div>
-		<!-- split header and content -->
-
-		<div id="main-photo" class="photo"></div>
-
-		<div id="about">
-			<div id="aboutText">
-
-			Hi, I'm Eric! If we ever happen to meet in person, here's a few things we could talk about:
-			<ul>
-				<li> Teaching and Education </li>
-				<li> Being Lost </li>
-				<li> Renewable Energy </li>
-				<li> Mass Transit </li>
-				<li> Maps </li>
-				<li> Olin College </li>
-				<li> Backpacking </li>
-			</ul>
-				</br>
-				What's on your list?
-
-
-			</br>
-
-
-
-			</div> <!-- about text div -->
-		</div> <!-- about div -->
-
-		<!-- break, extra info -->
-		<div id="upperFoot">
-			<b>Resume</b>
-			<a href="media/EricJones2015web.pdf"><img style="vertical-align:text-top" height="19px" src="media/pdf.png"></a> or
-			<a href="media/EricJones2015web.markdown.txt">text</a>
-
-			&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
-
-			<b>Contact</b> eric (at) ercjns (dot) com
-
-			&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
-
-			<b>Connect</b> &nbsp&nbsp
-			<a href="https://www.linkedin.com/in/ercjns"><img style="vertical-align:text-top" height="19px"src="media/linkedin.png"></a> &nbsp&nbsp
-			<a href="https://www.github.com/ercjns"><img style="vertical-align:text-top" height="19px" src="media/github.png"></a>  &nbsp&nbsp
-			<a href="https://www.facebook.com/ercjns"><img style="vertical-align:text-top" height="19px" src="media/facebook.png"></a> &nbsp&nbsp
-			<a href="https://www.twitter.com/ercjns"><img style="vertical-align:text-top" height="19px"src="media/twitter.png"></a>
-		</div>
-
-
-	</div> <!-- wrapper -->
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="foot">
+						Resume:
+						<a href="media/EricJones2015web.pdf">pdf</a> or
+						<a href="media/EricJones2015web.markdown.txt">text</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="foot">
+						eric (at) ercjns (dot) com
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="foot">
+						<a href="https://www.linkedin.com/in/ercjns"><img style="vertical-align:text-top" height="19px"src="media/linkedin.png"></a> &nbsp&nbsp
+						<a href="https://www.github.com/ercjns"><img style="vertical-align:text-top" height="19px" src="media/github.png"></a>  &nbsp&nbsp
+						<a href="https://www.facebook.com/ercjns"><img style="vertical-align:text-top" height="19px" src="media/facebook.png"></a> &nbsp&nbsp
+						<a href="https://www.twitter.com/ercjns"><img style="vertical-align:text-top" height="19px"src="media/twitter.png"></a>
+					</div>
+				</div>
+			</div> <!-- row3 -->
 
 
+		</div> <!--container-fluid-->
 	</body>
 </html>
