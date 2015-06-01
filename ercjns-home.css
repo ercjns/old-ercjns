@@ -18,21 +18,23 @@ a, a:hover, a:focus, a:active{
 	color: green;
 }
 
-.title h1 {
+.title h1 a {
 	font-family: 'Rock Salt', sans-serif;
 	line-height: 1.5;
+	color: black;
+	text-decoration: none;
 }
 
-/*.menu {
+.menu {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	padding-top: 30px;
 	font-weight: bold;
 	font-size: 20px;
-}*/
+}
 
 .content-wrap {
-	background-color: rgba(240,240,240,0.5);
+	background-color: rgba(240,240,240,0.6);
 	min-width: 236px;
 }
 
@@ -47,5 +49,12 @@ a, a:hover, a:focus, a:active{
 }
 
 .foot a {
+	font-style: italic;
+}
+
+
+
+/* EXTRAS FOR PROJECTS PAGE */
+.background-info {
 	font-style: italic;
 }

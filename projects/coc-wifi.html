@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>eric jones: projects</title>
+
+		<!-- faviocon.ico -->
+		<link rel="shortcut icon" href="../media/favicon.ico" />
+
+		<!-- help the series of tubes recognize me -->
+		<meta name="keywords" content="Eric Jones, Olin College, Engineer" />
+		<meta name="description" content="Eric is an engineer, explorer, and project wizard." />
+		<meta name="author" content="Eric Jones" />
+
+		<!-- be mobile friendly -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+
+		<!-- Get some fonts from google -->
+		<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<!-- home page CSS -->
+		<link rel="stylesheet" type="text/css" href="../ercjns-home.css" />
+
+    <script>
+		function scaleImage() {
+			var w = document.getElementById('coc-wifi-system').clientWidth;
+			var wval = (w-30)+"px";
+			document.getElementById('coc-wifi-system-img').style.width = wval;
+		}
+		</script>
+	</head>
+
+
+	<!-- Where all the real content goes -->
+	<body onload="scaleImage()" onresize="scaleImage()">
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-sm-5 title">
+					<h1><a href="../">Eric Jones</a></h1>
+				</div>
+				<div class="col-sm-offset-1 col-sm-6">
+					<div class="menu">
+						<a href="./">projects</a>
+					</div>
+				</div>
+			</div> <!-- row1 -->
+
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-10">
+					<div class="content-wrap">
+						<div class="content" id="ercjns-content">
+						<h2>Orienteering Live Team Scoring</h2>
+            <h4>Fall 2014, with Gordon Walsh and Mike Schuh</h4>
+            <p class="background-info">
+              Orienteering is a race of map and compass navigation. You can learn more about it <a href='http://orienteeringusa.org/new-o/what-orienteering' target="_blank">here</a>.
+            </p>
+            <p>
+              <a href="http://cascadeoc.org" target="_blank">Cascade Orienteering Club</a> hosts a winter orienteering league with meets roughly every two weeks, and about 300 competitors per meet. Because competitors start at intervals rather than all at the same time, competitors don't know where they stand until everyone has finished, and it is not readily apparent to spectators how tight the races are. In order to create a more engaging atmosphere, I developed a system that allows spectators and finished competitors to view the current meet results in real time. The system also computes team scores based on the results of individual finishers.
+            </p>
+            <p>
+              Modern competitive orienteering uses an e-punch system that is functionally equivalent to scanning an RFID card at each checkpoint on the course. At the finish, competitors download their e-punch to computers running meet management software. This software verifies the competitor visited the correct checkpoints in the correct order, and prints an individual result ticket.
+            </p>
+            <p>
+              The two main design considerations where how to display results, and how to collect data. Results were chosen to be shared via a local WiFi network and a locally hosted http application because cell service (and an internet connection) is not reliable at many meet locations. Obtaining e-punch data was slightly difficult because the meet management software does not provide a rich API surface. In order to obtain data from the competitor's e-punch cards, the system takes advantage of the meet software's ability to auto-print a result ticket when a competitor downloads. By printing to file rather than printing directly to the physical printer, a script can gather the necessary data for the WiFi system and trigger the actual physical print job.
+            </p>
+            <div class="row">
+              <div class="col-sm-8" id='coc-wifi-system'>
+                <img id='coc-wifi-system-img' src="../media/projects/coc-wifi-system.png" alt="Wifi system diagram" width="500px">
+              </div>
+              <div class="col-sm-4">
+                <p>
+                  In a typical set-up, the download and data entry computers would be hooked together directly via a crossover LAN cable. The wifi system adds an additional computer to host the web app and additional database, and a router for wired and wireless networking. The system also adds scripts to the download computer to process and hand-off the data.
+                </p>
+              </div>
+            </div> <!-- nested row -->
+            <p>
+              I contributed the <a href="https://github.com/ercjns/O-coc-wifiscoring" target="_blank">code</a> powering the full stack solution in node.js using the express web framework and mongoDB backing up the system. This was my first time building an app using node.js, so I chose tools based on my interpretation of popularity/adoption more than specific features. This certainly came to haunt me, as it turns out that the meet data is heavily relational and does not lend itself well to representation in a noSQL database. Luckily, mongoose provides APIs which do a great job of mimicking basic SQL joins. Even so, creating a new database model is high on the todo list.
+            </p>
+						<p>
+							The frontend uses the jade templating engine and a simple hand-crafted CSS file to display information. In the future as additional views are added such as meet management info (runners-on-course, runners by team, ...) or advanced statistics (splits by course/leg, season scoring scenarios, ...) then I expect to integrate with a more powerful and mobile-friendly UI framework such as bootstrap. For future seasons, I also expect to make changes to the system overall so that it is less dependent on a skilled operator, and so additional scoring algorithms can easily be used. There is also some possible optimization to run the app on a smaller machine, such as a raspberryPi, or a single-board computer that can provide routing and computing resources in one, simplifying meet setup.
+						</p>
+
+						<p>
+							Below are a couple screenshots from COC's 2014-2015 WIOL Championship meet (<a href="http://cascadeoc.org/results/2015/winter-o-serieswiol-championship">official results</a>). The backend code computes scores for finishers and teams, and awards ties based on a simple algorithm. In this meet, the fourth and fifth place teams scored the same points, and the tie is awarded to the team with the higher-scoring first competitor.
+						</p>
+
+						<div class="row">
+							<div class="col-md-6 col-xs-12">
+									<img src="../media/projects/coc-wifi-class.png" alt="screenshot of individual meet results webpage" width="350px"/>
+							</div>
+							<div class="col-md-6 col-xs-12">
+									<img src="../media/projects/coc-wifi-teams.png" alt="screenshot of team meet results webpage" width="350px"/>
+							</div>
+						</div> <!-- nested row -->
+
+						<p>
+							View or fork my <a href="https://github.com/ercjns/O-coc-wifiscoring" target="_blank">code on github</a>.
+						</p>
+					</div> <!-- content -->
+				</div> <!-- content-wrap -->
+			</div> <!-- row2 -->
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="foot">
+						Resume:
+						<a href="../media/EricJones2015web.pdf">pdf</a> or
+						<a href="../media/EricJones2015web.markdown.txt">text</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="foot">
+						eric (at) ercjns (dot) com
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="foot">
+						<a href="https://www.linkedin.com/in/ercjns"><img style="vertical-align:text-top" height="19px"src="../media/linkedin.png"></a> &nbsp&nbsp
+						<a href="https://www.github.com/ercjns"><img style="vertical-align:text-top" height="19px" src="../media/github.png"></a>  &nbsp&nbsp
+						<a href="https://www.facebook.com/ercjns"><img style="vertical-align:text-top" height="19px" src="../media/facebook.png"></a> &nbsp&nbsp
+						<a href="https://www.twitter.com/ercjns"><img style="vertical-align:text-top" height="19px"src="../media/twitter.png"></a>
+					</div>
+				</div>
+			</div> <!-- row3 -->
+
+
+		</div> <!--container-fluid-->
+	</body>
+</html>
